@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+    /* Додайте потрібні варіанти шрифту, наприклад, 400, 500, 600, які вам потрібні */
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .main {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .title {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1c3b5c;
+  }
+  
+  .input_holder {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #1c3b5c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif; /* Додаємо шрифт Montserrat */
+  }
+  
+  .btn:hover {
+    background-color: #1c3b5c;
+  }
+  
+  .task_list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .task_text {
+    flex: 1;
+  }
+  
+  .icon_holder {
+    display: flex;
+  }
+  
+  .icon {
+    cursor: pointer;
+    margin-left: 10px;
+    color: #ccc;
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #007bff;
+  }
+  
+  .input-error {
+    border-color: red; /* Колір рамки червоний при наявності помилки */
+  }
+  
+  .input-message::after {
+    content: attr(title); /* Відображаємо текст помилки */
+    position: absolute; /* Позиціонуємо відносно батьківського елемента */
+    bottom: -20px; /* Зміщуємо текст вгору на 20 пікселів, щоб він був знизу */
+    left: 0; /* Вирівнюємо текст по лівому краю */
+  }
+  
+  .input_holder {
+    position: relative; /* Додаємо відносне позиціонування */
+  }
+  
+  .input-message {
+    font-family: 'Montserrat', sans-serif; /* Додаємо шрифт Montserrat */
+    color: red; /* Колір тексту червоний */
+    font-size: 14px; /* Розмір шрифту зменшено */
+    position: absolute; /* Позиціонуємо абсолютно */
+    bottom: -20px; /* Зміщуємо текст вгору на 20 пікселів, щоб він був під інпутом */
+    left: 2px; /* Вирівнюємо текст по лівому краю */
+  }
+  
